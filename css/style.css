@@ -1,0 +1,63 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]{
+    width: 20em;
+    height: 1.5em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 0px rgb(97, 97, 97);
+    padding: 2px 5px;
+}
+#main fieldset{
+    width: 15em;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+}
+.elementofieldset{
+    text-align: center;
+}
+
+#main, #senhas{
+    text-align: center;
+    width: 30%;
+    height: 10%;
+    background-color: #cfe6e2;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px 0px rgb(97, 97, 97);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+#senhas{
+    visibility: hidden;
+}
+#titulo{
+    font-weight: bolder;
+    margin-top: 0px;
+}
+#btnconfirmar, #btnlimpar{
+    width: 30%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 2px 5px 0px rgb(97, 97, 97);
+}
+#btnconfirmar:hover, #btnlimpar:hover{
+    background-color: rgb(164, 164, 164);
+}

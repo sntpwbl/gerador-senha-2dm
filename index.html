@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gerador de senha</title>
+</head>
+<body>
+    <div id="main">
+            <h1 id="titulo">Gerador de senha</h1>
+            
+            <p>Tamanho das senhas</p>
+            <input type="number" id="tamanhosenha" placeholder="Número de caracteres entre 1 a 20">
+    
+            <p>Quantidade de senhas</p>
+            <input type="number" id="quantidadesenha" placeholder="Número de senhas entre 1 a 10">
+    
+            <fieldset>
+                <legend>Opcionais</legend>
+                
+                <div class="elementofieldset">
+                    <input type="checkbox" name="letram" id="letram">
+                    <label for="letram">Letras maiúsculas</label>
+                </div>
+                
+                <div class="elementofieldset">
+                    <input type="checkbox" name="numeros" id="numeros">
+                    <label for="numeros">Números</label>
+                </div>
+                
+                <div class="elementofieldset">
+                    <input type="checkbox" name="caracterespecial" id="caracterespecial">
+                    <label for="caracterespecial">Caracteres especiais</label>
+                </div>
+                
+            </fieldset>
+    
+            <button id="btnconfirmar" onclick="gerarSenha()">Confirmar</button>
+            <button id="btnlimpar" onclick="limparForms()">Limpar</button>
+    </div>
+    
+
+    <div id="senhas"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
