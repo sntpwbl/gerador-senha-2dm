@@ -52,7 +52,7 @@ input[type="number"]{
     margin-top: 0px;
 }
 #btnconfirmar, #btnlimpar{
-    width: 30%;
+    width: 100px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -61,30 +61,26 @@ input[type="number"]{
 #btnconfirmar:hover, #btnlimpar:hover{
     background-color: rgb(164, 164, 164);
 }
+
+#teste2{
+    padding-top: 20px;
+}
+/*responsividade foi apenas um teste!*/
 @media(max-width: 680px){
     #main fieldset{
         width: 90%;
     }
-    input[type="number"]{
-        width: 80%;
-    }
-    #main, #senhas{
-        width: 50%;
-    }
 }
 @media(max-width: 826px){
     #main fieldset{
-        width: 85%;
+        width: 80%;
     }
 }
-@media (max-width: 1024){
-    #main fieldset{
-        width: 80%;
-    }
+@media (max-width: 1044){
     input[type="number"]{
-        width: 80%;
+        width: 90%;
     }
     #main, #senhas{
-        width: 45%;
+        width: 50%;
     }
 }
