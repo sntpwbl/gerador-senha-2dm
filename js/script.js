@@ -22,11 +22,11 @@ function gerarSenha(){
         alert('A quantidade de senhas não pode ultrapassar o número 10. Tente novamente.');
         limparCampos();
     }
-    else if(qtdCaracteres == 0 || qtdCaracteres == ''){
+    else if(qtdCaracteres <= 0 || qtdCaracteres == ''){
         alert('O campo de tamanho das senhas não pode ser nulo.');
         limparCampos();
     }
-    else if(qtdSenhas == 0 || qtdSenhas == ''){
+    else if(qtdSenhas <= 0 || qtdSenhas == ''){
         alert('O campo de quantidade das senhas não pode ser nulo.');
         limparCampos();
     }
