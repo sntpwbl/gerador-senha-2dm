@@ -79,3 +79,24 @@ function limparForms(){
     elementoDiv.innerHTML = '';
     elementoDiv.style.visibility = "hidden";
 }
+
+function colocarPlaceholder(){
+    var qtdCaracteres = document.getElementById('tamanhosenha');
+    var qtdSenhas = document.getElementById('quantidadesenha');
+    if (window.matchMedia("(max-width: 1200px)").matches) {
+        qtdCaracteres.setAttribute('placeholder', '1 a 20');
+        qtdSenhas.setAttribute('placeholder', '1 a 10');
+    }
+    else if(window.matchMedia("(min-width: 1200px)").matches){
+        qtdCaracteres.setAttribute('placeholder', 'Caracteres entre 1 a 20');
+        qtdSenhas.setAttribute('placeholder', 'Senhas entre 1 a 10');
+    }
+    else{
+        qtdCaracteres.removeAttribute('placeholder');
+        qtdSenhas.removeAttribute('placeholder');
+    }
+}
+
+colocarPlaceholder();
+
+window.addEventListener('resize', colocarPlaceholder);
