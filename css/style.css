@@ -13,7 +13,7 @@ input::-webkit-inner-spin-button {
 }
 
 input[type="number"]{
-    width: 20em;
+    width: 50%;
     height: 1.5em;
     border: none;
     border-radius: 5px;
@@ -21,7 +21,7 @@ input[type="number"]{
     padding: 2px 5px;
 }
 #main fieldset{
-    width: 15em;
+    width: 50%;
     border-radius: 5px;
     color: rgb(0, 0, 0);
     margin: 1em auto;
@@ -60,4 +60,31 @@ input[type="number"]{
 }
 #btnconfirmar:hover, #btnlimpar:hover{
     background-color: rgb(164, 164, 164);
+}
+@media(max-width: 680px){
+    #main fieldset{
+        width: 90%;
+    }
+    input[type="number"]{
+        width: 80%;
+    }
+    #main, #senhas{
+        width: 50%;
+    }
+}
+@media(max-width: 826px){
+    #main fieldset{
+        width: 85%;
+    }
+}
+@media (max-width: 1024){
+    #main fieldset{
+        width: 80%;
+    }
+    input[type="number"]{
+        width: 65%;
+    }
+    #main, #senhas{
+        width: 50%;
+    }
 }
