@@ -70,6 +70,10 @@ input[type="number"]{
     #main fieldset{
         width: 90%;
     }
+    
+    #main, #senhas{
+        width: 75%;
+    }
 }
 @media(max-width: 826px){
     #main fieldset{
