@@ -34,7 +34,6 @@ input[type="number"]{
 
 #main, #senhas{
     text-align: center;
-    width: 30%;
     height: 10%;
     background-color: #cfe6e2;
     padding: 2em;
@@ -66,7 +65,7 @@ input[type="number"]{
     padding-top: 20px;
 }
 /*responsividade foi apenas um teste!*/
-@media(max-width: 680px){
+@media(max-width: 650px){
     #main fieldset{
         width: 90%;
     }
@@ -80,11 +79,17 @@ input[type="number"]{
         width: 80%;
     }
 }
-@media (max-width: 1044){
+@media (min-width: 650px){
     input[type="number"]{
         width: 90%;
     }
+    
     #main, #senhas{
         width: 50%;
+    }
+}
+@media (min-width: 1024px){
+    #main, #senhas{
+        width: 30%;
     }
 }
