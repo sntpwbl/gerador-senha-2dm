@@ -13,7 +13,6 @@ input::-webkit-inner-spin-button {
 }
 
 input[type="number"]{
-    width: 50%;
     height: 1.5em;
     border: none;
     border-radius: 5px;
@@ -91,5 +90,8 @@ input[type="number"]{
 @media (min-width: 1024px){
     #main, #senhas{
         width: 30%;
+    }
+    input[type="number"]{
+    width: 50%;
     }
 }
