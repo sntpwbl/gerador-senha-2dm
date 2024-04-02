@@ -18,8 +18,4 @@ Desenvolver um aplicativo que gere senhas com os seguintes requisitos funcionais
      Botão para limpar todos os inputs;
      
      textarea para exibir a(s) senha(s);
-     
-Usar: HTML, CSS e JS.
-Fazer o deploy;
-Comitar no github.
 
